@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgb(233, 64, 211) 100%
+  );
+  color: whitesmoke;
+}
+.quote-block {
+  width: 70vw;
+  min-width: 350px;
+  max-width: 1000px;
+  padding: 7px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px 10px rgb(163, 150, 150);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-block h2 {
+  font-size: 30px;
+}
+.quote-block h2::after {
+  content: " ";
+  width: 100px;
+  height: 3px;
+  background-color: rgb(139, 130, 130);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.quote-block span {
+  margin-top: 30px;
+  display: inline-block;
+}
+#quote {
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  margin-top: 20px;
+}
+#author {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  font-size: 23px;
+  font-family: "Fasthand", cursive;
+}
+button {
+  width: 150px;
+  height: 50px;
+  background-color: rgb(38, 120, 226);
+  color: white;
+  font-size: 20px;
+  margin: 5px 20px;
+  border: 1px solid rgb(166, 220, 252);
+  border-radius: 25px;
+  box-shadow: none;
+  position: relative;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 5px;
+}
+img {
+  width: 30px;
+  margin-right: 5px;
+}
+button span {
+  position: absolute;
+  top: -20px;
+  left: 58px;
+  z-index: 2;
+}
+button img {
+  position: absolute;
+  left: 22px;
+  top: 10px;
+}
